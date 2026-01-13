@@ -1,34 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Logo from "./assets/logo.png"
+import Hero from "./assets/hero.png"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+       <nav className="flex justify-between items-center px-8 py-4 bg-white shadow-md">
+        <div className="flex items-center gap-3">
+          <img src={Logo} alt="Logo" className="w-12 h-12 object-contain" />
+          <h1 className="text-2xl text-[#173A56] font-bold">Product</h1>
+        </div>
+
+        <ul className="flex items-center gap-6">
+          <li><p className="text-[#3d2228] text-base hover:text-blue-500 cursor-pointer">Product</p></li>
+          <li><p className="text-[#3d2228] text-base hover:text-blue-500 cursor-pointer">Customers</p></li>
+          <li><p className="text-[#3d2228] text-base hover:text-blue-500 cursor-pointer">Pricing</p></li>
+          <li><p className="text-[#3d2228] text-base hover:text-blue-500 cursor-pointer">Sources</p></li>
+          <li>
+            <button className="px-4 py-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">
+              Sign in
+            </button>
+          </li>
+          <li>
+            <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+              Sign up
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div className='flex justify-center items-center gap-24'>
+          <div>
+             <h1 className='text-[40px] text-[#22343D] font-bold'>Work at the speed <br /> of thought</h1>
+             <p className='text-[18px] text-[#22343D] mt-5'>Tools, tutorials, design and innovation experts, all <br /> in one place! The most intuitive way to imagine <br /> your next user experience.</p>
+             <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition mt-5">
+              Get started
+            </button>
+          </div>
+          <div>
+             <img className='mt-6' src={Hero} alt="" />
+          </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
