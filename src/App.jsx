@@ -76,7 +76,25 @@ for You</h1>
     </div>
     {/* maniki tugagan joy */}
 
-      
+    <div className='flex justify-center items-center gap-[200px]' >
+        <div className='flex flex-col justify-center items-center'>
+        <div className='flex justify-center items-center flex-col  font-bold'>
+          <h2>Effortless Validation for</h2>
+          <h2 className='text-xl'>Management</h2>
+        </div>
+        <div>
+        <div className='flex justify-center items-center flex-col  font-bold'>
+          <h2 className='text-xl'>Accessory makers</h2>
+          <p>While most people enjoy casino gambling, sports betting, <br /> lottery and bingo playing for the fun</p>
+        </div>
+        <div className='flex justify-center items-center flex-col font-bold'>
+          <h2 className='text-xl'>Accessory makers</h2>
+          <p>While most people enjoy casino gambling, sports betting, <br /> lottery and bingo playing for the fun</p>
+        </div></div></div>
+        <div>
+          <img src={rasm} alt="" />
+        </div>
+      </div>
     </div>
   )
 }
