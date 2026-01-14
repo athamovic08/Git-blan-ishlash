@@ -41,6 +41,42 @@ const App = () => {
              <img className='mt-6' src={Hero} alt="" />
           </div>
       </div>
+
+
+
+
+
+      {/* man Abdulloh */}
+      <h1 className='text-center text-[32px] '>Product  was Built Specifically <br />
+for You</h1>
+
+
+    <div className='flex justify-center gap-20 mt-[30px]'>
+      <div>
+        <img src={Icon1} alt="#" />
+        <p className='text-[22px]'>First click tests</p>
+        <p className='text-[16px] '>While most people enjoy <br /> casino gambling,</p>
+      </div>
+      <div>
+        <img src={Icon2} alt="#" />
+        <p className='text-[22px]'>Design surveys</p>
+        <p className='text-[16px] '>Sports betting, lottery and <br /> bingo playing for the fun</p>
+      </div>
+      <div>
+        <img src={Icon3} alt="#" />
+        <p className='text-[22px]'>Preference tests</p>
+        <p className='text-[16px] '>The Myspace page defines <br /> the individual.</p>
+      </div>
+      <div>
+        <img src={Icon4} alt="#" />
+        <p className='text-[22px]'>Five second tests</p>
+        <p className='text-[16px] '>Personal choices and the <br /> overall personality of the <br /> person. </p>
+      </div>
+    </div>
+    <div className='flex justify-center'>
+      <button className='bg-[#02897A] h-[53px] w-[175px] rounded-[20px] mt-[30px] text-white'>SIGN UP NOW</button>
+    </div>
+    {/* maniki tugagan joy */}
     </div>
   )
 }
