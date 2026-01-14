@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from "./assets/logo.png"
 import Hero from "./assets/hero.png"
+import rasm from "./assets/amico.png"
 
 const App = () => {
   return (
@@ -29,7 +30,7 @@ const App = () => {
         </ul>
       </nav>
 
-      <div className='flex justify-center items-center gap-24'>
+      <div className='flex justify-center items-center gap-24 '>
           <div>
              <h1 className='text-[40px] text-[#22343D] font-bold'>Work at the speed <br /> of thought</h1>
              <p className='text-[18px] text-[#22343D] mt-5'>Tools, tutorials, design and innovation experts, all <br /> in one place! The most intuitive way to imagine <br /> your next user experience.</p>
@@ -40,6 +41,26 @@ const App = () => {
           <div>
              <img className='mt-6' src={Hero} alt="" />
           </div>
+      </div>
+
+      <div className='flex justify-center items-center gap-[200px]' >
+        <div className='flex flex-col justify-center items-center'>
+        <div className='flex justify-center items-center flex-col  font-bold'>
+          <h2>Effortless Validation for</h2>
+          <h2 className='text-xl'>Management</h2>
+        </div>
+        <div>
+        <div className='flex justify-center items-center flex-col  font-bold'>
+          <h2 className='text-xl'>Accessory makers</h2>
+          <p>While most people enjoy casino gambling, sports betting, <br /> lottery and bingo playing for the fun</p>
+        </div>
+        <div className='flex justify-center items-center flex-col font-bold'>
+          <h2 className='text-xl'>Accessory makers</h2>
+          <p>While most people enjoy casino gambling, sports betting, <br /> lottery and bingo playing for the fun</p>
+        </div></div></div>
+        <div>
+          <img src={rasm} alt="" />
+        </div>
       </div>
     </div>
   )
