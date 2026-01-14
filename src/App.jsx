@@ -44,8 +44,6 @@ const App = () => {
 
 
 
-
-
       {/* man Abdulloh */}
       <h1 className='text-center text-[32px] '>Product  was Built Specifically <br />
 for You</h1>
@@ -77,6 +75,8 @@ for You</h1>
       <button className='bg-[#02897A] h-[53px] w-[175px] rounded-[20px] mt-[30px] text-white'>SIGN UP NOW</button>
     </div>
     {/* maniki tugagan joy */}
+
+      
     </div>
   )
 }
